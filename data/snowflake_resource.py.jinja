@@ -1,0 +1,4 @@
+@dataclass
+class {{class_name}}(SnowflakeResource):
+    {% for a in attrs %}{{a}}
+    {% endfor %}

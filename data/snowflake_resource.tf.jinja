@@ -1,0 +1,5 @@
+resource "{{resource_type_name}}" "{{name}}" {
+  {%- for k, v in attr.items() %}
+  {{k}} = {{v | to_json}}
+  {%- endfor %}
+}
