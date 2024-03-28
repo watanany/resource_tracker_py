@@ -14,7 +14,7 @@ $ # .env.sample を元に Snowflake 用に環境変数を設定する
 $ cp .env.sample .env
 
 $ # ①
-$ poetry run hy apps/fetch_resource_schemas.hy > data/resources.jsonl 
+$ poetry run python apps/fetch_resource_schemas.py > data/resources.jsonl 
 
 $ # ②
 $ poetry run python apps/generate_resource_schemas.py
